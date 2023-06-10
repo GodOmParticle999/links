@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    overflow: hidden;
+    background-color: aliceblue;
+    text-align: center;
+}
+h2{
+    margin-top: 50px;
+    font-size: 30px;
+    color: crimson;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.7);
+    transform: translateX(100%);
+    animation: moving 17s linear infinite;
+}
+@keyframes moving {
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+.body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    overflow-x: scroll;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+.title{
+    margin-bottom: 20px;
+    font-size: large;
+    text-shadow: 0 5px 5px;
+}
+
+.cardP{
+    background-color: aqua;
+    
+    border-radius: 23px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 10px 0;
+    box-shadow: 2px -4px 4px rgba(0, 0, 0, 0.4) ;
+}
+@media (max-width:768px) {
+.cardP{
+    width:45vw ;
+
+}
+.link{
+    padding: 2px;
+}
+
+    
+}
+.card{
+    padding: 10px;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 10%; */
+    object-fit: contain;
+}
+.link{
+    margin: 10px 20px;
+    transform: scale(.9);
+    animation: blink 1s ease-in-out infinite;
+    color: blanchedalmond;
+    border-radius: 15px;
+    background-color: blueviolet;
+    padding: 8px;
+}
+@keyframes blink {
+    to{transform:scale(1)
+    }
+    /* from{
+        transform: scale(.9);
+    } */
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.link:hover{
+    background-color: rgb(79, 0, 153);
+    cursor: pointer;
+}
